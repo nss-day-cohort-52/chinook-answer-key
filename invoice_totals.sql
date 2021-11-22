@@ -5,3 +5,4 @@ SELECT i.Total,
 FROM Invoice i
     JOIN Customer c on c.CustomerId = i.CustomerId
     JOIN Employee e on e.EmployeeId = c.SupportRepId
+Order by c.Country COLLATE NOCASE
